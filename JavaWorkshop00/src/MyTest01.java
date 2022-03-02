@@ -2,6 +2,7 @@
 public class MyTest01 {
 
 	public static void main(String[] args) {
+		
 		String name = "홍길동";
 		int age = 20;
 		String address = "서울";
@@ -18,7 +19,7 @@ public class MyTest01 {
 		System.out.printf("이름은 %s\n", name);
 		System.out.printf("나이는 %d 이고 주소는 %s\n", age, address);
 		
-				
+			
 
 	}
 
