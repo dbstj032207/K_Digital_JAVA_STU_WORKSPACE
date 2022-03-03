@@ -19,7 +19,9 @@ public class WhileTest {
 		hello 2
 		hello 3
 		hello 4
-		*/ // 무한 루프
+		while 빠져나옴 n = 5
+		===================
+		*/ 
 		
 		int n2 = 0;	// 초기식
 		do {
