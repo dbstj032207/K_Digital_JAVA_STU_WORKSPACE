@@ -80,7 +80,32 @@ public class ForTest {
 			System.out.println();
 		}
 		
+		System.out.println(" =====================================");
+		
+		// break와 continue
+		System.out.println("------ break와 continue --------");
+		System.out.println("1. break");
+		for (int k = 0; k < 5; k++) {
+			System.out.println("hello " + k);
+			if (k == 3) break;
+		}
+		
+		System.out.println(" =====================================");
+		
+		System.out.println("2. continue");
+		for (int k = 0; k < 5; k++) {
+			System.out.println("hello1 " + k);
+			System.out.println("hello2 " + k);
+			if (k == 3) continue;	// 이후 실행하지 않고 반복문을 계속 진행
+			System.out.println("hello3 " + k);
+			System.out.println("hello4 " + k);
+		}
+		
+		
+		
 		System.out.println(" ========= main 마지막 부분 ==============");
+		
+		
 	}
 
 }
