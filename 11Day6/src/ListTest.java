@@ -14,7 +14,9 @@ public class ListTest {
 		list.add(new Date());
 		
 		System.out.println(list);
-
+		// [홍길동, 이순신, 20, 홍길동, 3.15, Mon Mar 14 14:47:56 KST 2022]
+		// 중복 서상, 저장된 순서 반영
+		
 	}
 
 }
