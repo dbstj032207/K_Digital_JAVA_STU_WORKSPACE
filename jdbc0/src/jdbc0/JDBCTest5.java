@@ -3,7 +3,7 @@ package jdbc0;
 import java.beans.Statement;
 import java.sql.*;
 
-public class JDBCTest4 {
+public class JDBCTest5 {
 
 	public static void main(String[] args) {
 		
@@ -27,18 +27,17 @@ public class JDBCTest4 {
 			System.out.println("db접속 성공 : " + con);
 			
 			// 4. SQL 작성
-			String sql = "UPDATE DEPT SET DNAME = ?, loc = ?"
-					+ "where deptno = ? ";
+			String sql = "DELETE FROM DEPT WHERE DEPTNO = ?";
 			
 			String sql2 = "SELECT * "
-					+ "FROM DEPT ";
+					+ "FROM DEPT "
+					+ "WHERE DEPTNO = ?";
 			
 			// 5. SQL 실행 준비 ==> :con에서 실행할 Statement 객체 얻기
 			pstmt = con.prepareStatement(sql);
 			
-			pstmt.setString(1, "영업");
-			pstmt.setString(2, "부산");
-			pstmt.setInt(3, 14);
+
+			pstmt.setInt(1, 14);
 			
 			
 			
@@ -51,6 +50,7 @@ public class JDBCTest4 {
 			
 			pstmt.close();
 			pstmt = con.prepareStatement(sql2);
+			pstmt.setInt(1, 14);
 			rs = pstmt.executeQuery();
 			
 			// ResultSet  출력
