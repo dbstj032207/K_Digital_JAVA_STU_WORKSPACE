@@ -72,6 +72,47 @@ public class DeptDAO {	// db 접속
 			}
 		}//end finally
 		return list;
+	}
+
+
+
+	public int insertDept(DeptDTO deptDTO) {
+		Connection con = null;	
+		PreparedStatement pstmt = null;	
+		int num = 0;
+		
+		try {
+			// 3. 오라클 연결 (Connection 연결)
+			con = DriverManager.getConnection(url, userid, passwd);
+			System.out.println("db접속 성공 : " + con);
+			
+			// 4. SQL 작성
+			String sql = "INSERT INTO DEPT (deptno, dname, loc) "
+					+ "VALUES (?, ?, ?)";
+			
+			// 5. SQL 실행 준비 ==> :con에서 실행할 Statement 객체 얻기
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, deptDTO.getDeptno());
+			pstmt.setString(2, deptDTO.getDname());
+			pstmt.setString(3, deptDTO.getLoc());
+						
+			// 6. 실행해서 결과받기
+			num = pstmt.executeUpdate();
+			System.out.println("실행된 레코드 개수: " + num);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				// 7. 자원반납 반대순서로 실행
+				if(pstmt != null)	pstmt.close();
+				if(con != null)	con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}//end finally
+		
+		return num;
 	}	
 			
 }
