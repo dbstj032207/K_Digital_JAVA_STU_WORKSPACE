@@ -30,6 +30,8 @@ public class JdbcTemplate {
 	public static Connection getConnection() {
 		Connection conn = null;
 		try {
+			
+			// 3. 오라클 연결 (Connection 연결)
 			conn = DriverManager.getConnection(url, userid, passwd);
 			System.out.println("db 연결됨");
 			conn.setAutoCommit(false);
@@ -69,7 +71,13 @@ public class JdbcTemplate {
 		}
 	}
 	
-	
+	/**
+     * Statement를 Close 한다.
+     * 
+     * @param stmt
+     *            Statement 객체.
+     */
+
 	public static void close(Statement stmt) {
 		
 		try {
