@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.test.Outer.Inner"/>
-<fullyQualifiedTypeName name="com.test2.Flyer"/>
-<fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="com.test3.Person"/>
-<fullyQualifiedTypeName name="com.test3.PersonComp"/>
-<fullyQualifiedTypeName name="DateTest"/>
-<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-<fullyQualifiedTypeName name="Ex08_8"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="DecimalFormatTest"/>
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
@@ -31,7 +21,6 @@
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
@@ -42,7 +31,6 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="MakeList"/>
 <fullyQualifiedTypeName name="ConvertList"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="Boat"/>
 <fullyQualifiedTypeName name="Cruise"/>
 <fullyQualifiedTypeName name="Mobile"/>
@@ -52,12 +40,24 @@
 <fullyQualifiedTypeName name="com.simpeDAO.DeptDAO"/>
 <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
 <fullyQualifiedTypeName name="com.simpeDAO.DeptDTO"/>
-<fullyQualifiedTypeName name="com.dto.Dept"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.exception.RecordNotFoundException"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="EmpTest"/>
+<fullyQualifiedTypeName name="com.dao.EmpDAO"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.common.util.JdbcTemplate"/>
+<fullyQualifiedTypeName name="com.entity.EmpDTO"/>
+<fullyQualifiedTypeName name="com.exception.DataNotFoundException"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="OralceMyBatisMain"/>
+<fullyQualifiedTypeName name="com.service.OracleMyBatisService"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.dao.OracleMyBatisDAO"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="com.config.MySqlSessionFactory"/>
+<fullyQualifiedTypeName name="com.dto.Dept"/>
 </qualifiedTypeNameHistroy>
